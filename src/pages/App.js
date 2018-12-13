@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import Layout from "../components/Layout";
+import CornerstoneElement from "../components/CornerstoneElement";
 
 const Wrapper = styled.div`
   max-width: 1000px;
@@ -10,12 +11,19 @@ const Wrapper = styled.div`
   box-sizing: border-box;
 `;
 
+const imageId = "../images/test.jpg";
+const stack = {
+  imageIds: [imageId],
+  currentImageIdIndex: 0
+};
+
 class App extends Component {
   render() {
     return (
       <Layout>
         <Wrapper>
           <h1>Hello World</h1>
+          <CornerstoneElement stack={{ ...stack }} />
         </Wrapper>
       </Layout>
     );
