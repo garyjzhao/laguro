@@ -70,7 +70,6 @@ class CornerStoneElement extends Component {
       cornerstoneTools.zoom.activate(element, 4); // zoom is the default tool for right mouse button
       cornerstoneTools.zoomWheel.activate(element); // zoom is the default tool for middle mouse wheel
 
-      cornerstoneTools.touchInput.enable(element);
       cornerstoneTools.panTouchDrag.activate(element);
       cornerstoneTools.zoomTouchPinch.activate(element);
 

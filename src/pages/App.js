@@ -11,7 +11,8 @@ const Wrapper = styled.div`
   box-sizing: border-box;
 `;
 
-const imageId = "../images/test.jpg";
+const imageId =
+  "https://rawgit.com/cornerstonejs/cornerstoneWebImageLoader/master/examples/Renal_Cell_Carcinoma.jpg";
 const stack = {
   imageIds: [imageId],
   currentImageIdIndex: 0
