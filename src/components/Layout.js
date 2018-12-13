@@ -3,12 +3,14 @@ import Header from "./Header";
 import styled from "styled-components";
 
 const globalStyles = {
-  darkBackground: "#282c34"
+  darkBackground: "#282c34",
+  borderRadius: "3px"
 };
 
 const AppStyles = styled.div`
   min-height: 100vh;
   --dark-bg: ${props => props.globalStyles.darkBackground};
+  --radius: ${props => props.globalStyles.borderRadius};
 `;
 
 class Layout extends Component {
