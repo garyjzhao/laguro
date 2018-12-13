@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import Layout from "../components/Layout";
 import Input from "../components/login/Input";
+import CountryList from "../components/login/CountryList";
 
 const FullDarkBg = styled.div`
   background-color: var(--dark-bg);
@@ -21,15 +22,38 @@ const LoginWrapper = styled.div`
   }
 `;
 
+const Button = styled.button`
+  cursor: pointer;
+  width: 100%;
+  padding: 10px;
+  border-radius: var(--radius);
+  font-size: 1.25em;
+  font-weight: bold;
+  border: 1px solid #000;
+  &:hover {
+    background-color: var(--dark-bg);
+    color: #fff;
+  }
+`;
+
 class Login extends Component {
+  goToApp = event => {
+    event.preventDefault();
+    this.props.history.push(`/App`);
+  };
+
   render() {
     return (
       <Layout>
         <FullDarkBg>
           <LoginWrapper>
             <h2>Login!</h2>
-            <Input id="Username" type="text" />
-            <Input id="Password" type="password" />
+            <form onSubmit={this.goToApp}>
+              <Input id="Username" type="text" />
+              <Input id="Password" type="password" />
+              <CountryList />
+              <Button type="submit">Login</Button>
+            </form>
           </LoginWrapper>
         </FullDarkBg>
       </Layout>

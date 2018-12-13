@@ -29,7 +29,7 @@ class Header extends Component {
     return (
       <Wrapper>
         <h1>Laguro</h1>
-        <a href="#">Login</a>
+        <a href="/">Login</a>
       </Wrapper>
     );
   }
