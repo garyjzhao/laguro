@@ -1,17 +1,14 @@
 import React, { Component } from "react";
 import "../css/App.css";
 
-import Header from "../components/Header";
+import Layout from "../components/Layout";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Header />
-        <header className="App-header">
-          <h1>Hello World</h1>
-        </header>
-      </div>
+      <Layout>
+        <h1>Hello World -- App</h1>
+      </Layout>
     );
   }
 }
