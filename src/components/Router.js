@@ -20,14 +20,15 @@ class Router extends Component {
     return (
       <BrowserRouter>
         <Switch>
+          {/* <Route exact path="/" component={Login} user={this.state.user} /> */}
           <Route
             exact
             path="/"
             render={props => (
               <Login
-                {...props}
                 user={this.state.user}
                 getUsername={this.getUsername}
+                {...props}
               />
             )}
           />
