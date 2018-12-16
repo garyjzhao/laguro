@@ -11,8 +11,4 @@ If there is any questions, please feel free to reach out to me.
 
 `yarn start`
 
-## Run with production assets
-
-`gatsby serve`
-
 Thanks for stopping by! 🙏🏼
