@@ -33,7 +33,9 @@ class Header extends Component {
         {this.props.isLoggedIn ? (
           <div>
             <a href="/App">My X-Rays</a>
-            <a href="/">Log Off</a>
+            <a href="/" onClick={this.props.logout}>
+              Log Off
+            </a>
           </div>
         ) : (
           <a href="/">Login</a>

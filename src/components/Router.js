@@ -20,6 +20,10 @@ class Router extends Component {
     });
   };
 
+  logout = () => {
+    this.setState({ isLoggedIn: false });
+  };
+
   render() {
     return (
       <BrowserRouter>
@@ -39,7 +43,11 @@ class Router extends Component {
           <Route
             path="/App"
             render={() => (
-              <App user={this.state.user} isLoggedIn={this.state.isLoggedIn} />
+              <App
+                user={this.state.user}
+                isLoggedIn={this.state.isLoggedIn}
+                logout={this.state.logout}
+              />
             )}
           />
           <Route component={NotFound} />
