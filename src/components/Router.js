@@ -12,15 +12,14 @@ class Router extends Component {
     };
   }
 
-  getUsername = () => {
-    // this.setState({ user });
+  getUsername = username => {
+    this.setState({ user: username });
   };
 
   render() {
     return (
       <BrowserRouter>
         <Switch>
-          {/* <Route exact path="/" component={Login} user={this.state.user} /> */}
           <Route
             exact
             path="/"
