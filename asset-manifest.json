@@ -1,7 +1,7 @@
 {
   "main.css": "/laguro/static/css/main.ca6e5ba6.chunk.css",
-  "main.js": "/laguro/static/js/main.a17f435c.chunk.js",
-  "main.js.map": "/laguro/static/js/main.a17f435c.chunk.js.map",
+  "main.js": "/laguro/static/js/main.08c7019a.chunk.js",
+  "main.js.map": "/laguro/static/js/main.08c7019a.chunk.js.map",
   "static/js/1.b71592db.chunk.js": "/laguro/static/js/1.b71592db.chunk.js",
   "static/js/1.b71592db.chunk.js.map": "/laguro/static/js/1.b71592db.chunk.js.map",
   "runtime~main.js": "/laguro/static/js/runtime~main.ea8c82ef.js",
@@ -9,6 +9,6 @@
   "static/media/logo.9641aa45.svg": "/laguro/static/media/logo.9641aa45.svg",
   "static/css/main.ca6e5ba6.chunk.css.map": "/laguro/static/css/main.ca6e5ba6.chunk.css.map",
   "index.html": "/laguro/index.html",
-  "precache-manifest.8ec59da8774bbf29d127b77af8d713e4.js": "/laguro/precache-manifest.8ec59da8774bbf29d127b77af8d713e4.js",
+  "precache-manifest.82a7c3e57ed322223baacf6fad497389.js": "/laguro/precache-manifest.82a7c3e57ed322223baacf6fad497389.js",
   "service-worker.js": "/laguro/service-worker.js"
 }

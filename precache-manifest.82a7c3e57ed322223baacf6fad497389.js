@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "a17f435c6e290e2f781f",
+    "revision": "08c7019adf3d02e03423",
     "url": "/laguro/static/css/main.ca6e5ba6.chunk.css"
   },
   {
-    "revision": "a17f435c6e290e2f781f",
-    "url": "/laguro/static/js/main.a17f435c.chunk.js"
+    "revision": "08c7019adf3d02e03423",
+    "url": "/laguro/static/js/main.08c7019a.chunk.js"
   },
   {
     "revision": "b71592dbcd4b593d1ec9",
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/laguro/static/media/logo.9641aa45.svg"
   },
   {
-    "revision": "bdc3a33effc9dfe44d07662f43ee83d6",
+    "revision": "2448389d047142bca73365f65e617e4d",
     "url": "/laguro/index.html"
   }
 ];
