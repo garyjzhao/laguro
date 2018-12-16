@@ -3,6 +3,8 @@ import styled from "styled-components";
 import Layout from "../components/Layout";
 import CornerstoneElement from "../components/CornerstoneElement";
 
+const iconPath = process.env.PUBLIC_URL + "/images/";
+
 const Wrapper = styled.div`
   max-width: 1000px;
   width: 100%;
@@ -14,8 +16,8 @@ const Wrapper = styled.div`
   }
 `;
 
-const imageId =
-  "https://raw.githubusercontent.com/garyjzhao/laguro/master/shot1-2.jpg";
+const imageId = `${iconPath}IO000000.jpg`;
+// "https://raw.githubusercontent.com/garyjzhao/laguro/master/shot1-2.jpg";
 
 class App extends Component {
   render() {
