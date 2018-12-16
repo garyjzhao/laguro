@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import styled from "styled-components";
 
 import * as cornerstone from "cornerstone-core";
 import * as cornerstoneMath from "cornerstone-math";
@@ -8,6 +9,12 @@ import * as cornerstoneWebImageLoader from "cornerstone-web-image-loader";
 cornerstoneTools.external.cornerstone = cornerstone;
 cornerstoneTools.external.cornerstoneMath = cornerstoneMath;
 cornerstoneWebImageLoader.external.cornerstone = cornerstone;
+
+const CornerstoneWrapper = styled.div`
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+`;
 
 class CornerStoneElement extends Component {
   constructor(props) {
@@ -35,7 +42,7 @@ class CornerStoneElement extends Component {
   }
   render() {
     return (
-      <div>
+      <CornerstoneWrapper>
         <div
           className="viewportElement"
           ref={input => {
@@ -46,7 +53,7 @@ class CornerStoneElement extends Component {
             height: "500px"
           }}
         />
-      </div>
+      </CornerstoneWrapper>
     );
   }
 }

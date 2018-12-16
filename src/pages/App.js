@@ -15,6 +15,12 @@ const imageId =
   "https://raw.githubusercontent.com/garyjzhao/laguro/master/shot1-2.jpg";
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      user: this.props.user
+    };
+  }
   render() {
     return (
       <Layout>

@@ -37,6 +37,7 @@ const Button = styled.button`
 `;
 
 class Login extends Component {
+  myInput = React.createRef();
   goToApp = event => {
     event.preventDefault();
     this.props.history.push(`/App`);
@@ -49,7 +50,7 @@ class Login extends Component {
           <LoginWrapper>
             <h2>Login!</h2>
             <form onSubmit={this.goToApp}>
-              <Input id="Username" type="text" />
+              <Input id="Username" type="text" ref={this.myInput} />
               <Input id="Password" type="password" />
               <CountrySelect />
               <Button type="submit">Login</Button>
