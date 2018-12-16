@@ -26,7 +26,7 @@ class Router extends Component {
 
   render() {
     return (
-      <BrowserRouter>
+      <BrowserRouter basename="/laguro">
         <Switch>
           <Route
             exact
