@@ -26,6 +26,7 @@ class Input extends Component {
           type={this.props.type}
           id={this.props.id}
           ref={this.props.innerRef}
+          required
         />
       </InputWrapper>
     );
