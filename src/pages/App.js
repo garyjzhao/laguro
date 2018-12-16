@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import Layout from "../components/Layout";
 import CornerstoneElement from "../components/CornerstoneElement";
+import { Link } from "react-router-dom";
 
 const Wrapper = styled.div`
   max-width: 1000px;
@@ -45,7 +46,7 @@ class App extends Component {
             </>
           ) : (
             <h1>
-              <a href="/">Please Log In.</a>
+              <Link to="/">Please Log In.</Link>
             </h1>
           )}
         </Wrapper>

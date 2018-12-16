@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import { ReactComponent as Logo } from "../images/logo.svg";
+import { Link } from "react-router-dom";
 
 const FullDarkBg = styled.div`
   background-color: var(--dark-bg);
@@ -44,20 +45,20 @@ class Header extends Component {
     return (
       <FullDarkBg>
         <Wrapper>
-          <a href="/App" id="logo">
+          <Link to="/App" id="logo">
             <LogoWrapper>
               <Logo />
             </LogoWrapper>
-          </a>
+          </Link>
           {this.props.isLoggedIn ? (
             <div>
-              <a href="#">My X-Rays</a>
-              <a href="/" onClick={this.props.logout}>
+              <Link to="/App">My X-Rays</Link>
+              <Link to="/" onClick={this.props.logout}>
                 Log Off
-              </a>
+              </Link>
             </div>
           ) : (
-            <a href="/">Login</a>
+            <Link to="/">Login</Link>
           )}
         </Wrapper>
       </FullDarkBg>
