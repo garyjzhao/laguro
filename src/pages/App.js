@@ -9,6 +9,9 @@ const Wrapper = styled.div`
   margin: 0 auto;
   padding: 0 16px;
   box-sizing: border-box;
+  h1 {
+    text-align: center;
+  }
 `;
 
 const imageId =
