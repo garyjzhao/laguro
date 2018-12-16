@@ -12,7 +12,7 @@ const Wrapper = styled.div`
 `;
 
 const imageId =
-  "https://rawgit.com/cornerstonejs/cornerstoneWebImageLoader/master/examples/Renal_Cell_Carcinoma.jpg";
+  "https://raw.githubusercontent.com/garyjzhao/laguro/master/shot1-2.jpg";
 const stack = {
   imageIds: [imageId],
   currentImageIdIndex: 0
