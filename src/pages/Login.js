@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import Layout from "../components/Layout";
 import Input from "../components/login/Input";
-import CountryList from "../components/login/CountryList";
+import CountrySelect from "../components/login/CountrySelect";
 
 const FullDarkBg = styled.div`
   background-color: var(--dark-bg);
@@ -51,7 +51,7 @@ class Login extends Component {
             <form onSubmit={this.goToApp}>
               <Input id="Username" type="text" />
               <Input id="Password" type="password" />
-              <CountryList />
+              <CountrySelect />
               <Button type="submit">Login</Button>
             </form>
           </LoginWrapper>
