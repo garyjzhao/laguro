@@ -11,9 +11,9 @@ cornerstoneTools.external.cornerstoneMath = cornerstoneMath;
 cornerstoneWebImageLoader.external.cornerstone = cornerstone;
 
 const CornerstoneWrapper = styled.div`
-  width: 500px;
-  height: 500px;
-  margin: 0 auto;
+  width: calc((968px / 3) - 15px);
+  height: 300px;
+  margin: 0 auto 16px;
   .viewportElement {
     width: 100%;
     height: 100%;

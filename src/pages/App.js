@@ -10,7 +10,13 @@ const Wrapper = styled.div`
   padding: 0 16px;
   box-sizing: border-box;
   text-align: center;
-  h1 {
+  .dcm-images {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @media screen and (max-width: 500px) {
+      flex-direction: column;
+    }
   }
 `;
 
@@ -31,9 +37,11 @@ class App extends Component {
               <p>
                 Scroll to Zoom. Click and Drag to Increase/Decrease Contrast
               </p>
-              {images.map(data => (
-                <CornerstoneElement imageId={data} />
-              ))}
+              <div className="dcm-images">
+                {images.map(data => (
+                  <CornerstoneElement imageId={data} />
+                ))}
+              </div>
             </>
           ) : (
             <h1>
