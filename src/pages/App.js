@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import Layout from "../components/Layout";
-import CornerstoneElement from "../components/CornerstoneElement";
+// import CornerstoneElement from "../components/CornerstoneElement";
+import GaryTest from "../components/GaryTest";
 
 const Wrapper = styled.div`
   max-width: 1000px;
