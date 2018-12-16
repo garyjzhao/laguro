@@ -17,6 +17,7 @@ const Wrapper = styled.div`
     font-weight: bold;
     color: #000;
     padding-bottom: 2px;
+    margin-right: 15px;
     &:hover {
       border-bottom: 2px solid #000;
       padding-bottom: 0;
@@ -29,7 +30,14 @@ class Header extends Component {
     return (
       <Wrapper>
         <h1>Laguro</h1>
-        {!this.props.isLoggedIn && <a href="/">Login</a>}
+        {this.props.isLoggedIn ? (
+          <div>
+            <a href="/App">My X-Rays</a>
+            <a href="/">Log Off</a>
+          </div>
+        ) : (
+          <a href="/">Login</a>
+        )}
       </Wrapper>
     );
   }
