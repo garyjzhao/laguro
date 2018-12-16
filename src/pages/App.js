@@ -25,7 +25,7 @@ class App extends Component {
     return (
       <Layout>
         <Wrapper>
-          <h1>Hello World</h1>
+          <h1>Hello{!!this.state.user ? `, ${this.state.user}` : "!"}!</h1>
           <CornerstoneElement imageId={imageId} />
         </Wrapper>
       </Layout>
