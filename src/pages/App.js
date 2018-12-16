@@ -14,8 +14,7 @@ const Wrapper = styled.div`
 const imageId =
   "https://raw.githubusercontent.com/garyjzhao/laguro/master/shot1-2.jpg";
 const stack = {
-  imageIds: [imageId],
-  currentImageIdIndex: 0
+  imageIds: [imageId]
 };
 
 class App extends Component {
@@ -24,7 +23,7 @@ class App extends Component {
       <Layout>
         <Wrapper>
           <h1>Hello World</h1>
-          <CornerstoneElement stack={{ ...stack }} />
+          <CornerstoneElement stack={{ ...stack }} imageId={imageId} />
         </Wrapper>
       </Layout>
     );
