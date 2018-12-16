@@ -37,9 +37,6 @@ const Wrapper = styled.div`
 
 const LogoWrapper = styled.div`
   max-width: 88px;
-  svg {
-    fill: black;
-  }
 `;
 
 class Header extends Component {
