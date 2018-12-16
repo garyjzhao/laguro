@@ -17,7 +17,7 @@ class Layout extends Component {
   render() {
     return (
       <AppStyles globalStyles={globalStyles}>
-        <Header />
+        <Header isLoggedIn={this.props.isLoggedIn} />
         {this.props.children}
       </AppStyles>
     );

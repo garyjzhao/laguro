@@ -17,7 +17,7 @@ const imageId =
 class App extends Component {
   render() {
     return (
-      <Layout>
+      <Layout isLoggedIn={this.props.isLoggedIn}>
         <Wrapper>
           {this.props.isLoggedIn && (
             <>
