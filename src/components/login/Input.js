@@ -22,9 +22,16 @@ class Input extends Component {
     return (
       <InputWrapper>
         <label htmlFor={this.props.id}>{this.props.id}</label>
-        <input type={this.props.type} id={this.props.id} />
+        <input
+          type={this.props.type}
+          id={this.props.id}
+          ref={this.props.innerRef}
+        />
       </InputWrapper>
     );
   }
 }
-export default Input;
+
+export default React.forwardRef((props, ref) => (
+  <Input innerRef={ref} {...props} />
+));
