@@ -3,8 +3,6 @@ import styled from "styled-components";
 import Layout from "../components/Layout";
 import CornerstoneElement from "../components/CornerstoneElement";
 
-const iconPath = process.env.PUBLIC_URL + "/images/";
-
 const Wrapper = styled.div`
   max-width: 1000px;
   width: 100%;
@@ -16,8 +14,13 @@ const Wrapper = styled.div`
   }
 `;
 
-const imageId = `${iconPath}IO000000.jpg`;
-// "https://raw.githubusercontent.com/garyjzhao/laguro/master/shot1-2.jpg";
+const firstImage =
+  "https://raw.githubusercontent.com/garyjzhao/laguro/master/public/images/IO000000.jpg";
+
+const secondImage =
+  "https://raw.githubusercontent.com/garyjzhao/laguro/master/public/images/IO000001.jpg";
+const thirdImage =
+  "https://raw.githubusercontent.com/garyjzhao/laguro/master/public/images/IO000002.jpg";
 
 class App extends Component {
   render() {
@@ -30,7 +33,9 @@ class App extends Component {
               <p>
                 Scroll to Zoom. Click and Drag to Increase/Decrease Contrast
               </p>
-              <CornerstoneElement imageId={imageId} />
+              <CornerstoneElement imageId={firstImage} />
+              <CornerstoneElement imageId={secondImage} />
+              <CornerstoneElement imageId={thirdImage} />
             </>
           ) : (
             <h1>

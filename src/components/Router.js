@@ -9,7 +9,7 @@ class Router extends Component {
     super(props);
     this.state = {
       user: "",
-      isLoggedIn: false
+      isLoggedIn: true
     };
   }
 
