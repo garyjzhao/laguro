@@ -46,8 +46,9 @@ class Login extends Component {
 
   goToApp(event) {
     event.preventDefault();
-    console.log(this.userName.value);
+    const username = this.userName.current.value;
     this.props.history.push(`/App`);
+    this.props.getUsername(username);
   }
 
   render() {
