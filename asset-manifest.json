@@ -1,14 +1,14 @@
 {
-  "main.css": "/laguro/static/css/main.ca6e5ba6.chunk.css",
-  "main.js": "/laguro/static/js/main.08c7019a.chunk.js",
-  "main.js.map": "/laguro/static/js/main.08c7019a.chunk.js.map",
-  "static/js/1.b71592db.chunk.js": "/laguro/static/js/1.b71592db.chunk.js",
-  "static/js/1.b71592db.chunk.js.map": "/laguro/static/js/1.b71592db.chunk.js.map",
+  "main.css": "/laguro/static/css/main.f7f1e754.chunk.css",
+  "main.js": "/laguro/static/js/main.06cbb2e0.chunk.js",
+  "main.js.map": "/laguro/static/js/main.06cbb2e0.chunk.js.map",
+  "static/js/1.3aa43ecb.chunk.js": "/laguro/static/js/1.3aa43ecb.chunk.js",
+  "static/js/1.3aa43ecb.chunk.js.map": "/laguro/static/js/1.3aa43ecb.chunk.js.map",
   "runtime~main.js": "/laguro/static/js/runtime~main.ea8c82ef.js",
   "runtime~main.js.map": "/laguro/static/js/runtime~main.ea8c82ef.js.map",
   "static/media/logo.9641aa45.svg": "/laguro/static/media/logo.9641aa45.svg",
-  "static/css/main.ca6e5ba6.chunk.css.map": "/laguro/static/css/main.ca6e5ba6.chunk.css.map",
+  "static/css/main.f7f1e754.chunk.css.map": "/laguro/static/css/main.f7f1e754.chunk.css.map",
   "index.html": "/laguro/index.html",
-  "precache-manifest.82a7c3e57ed322223baacf6fad497389.js": "/laguro/precache-manifest.82a7c3e57ed322223baacf6fad497389.js",
+  "precache-manifest.d426d0c66463cc39ade80d8dfe9e6dab.js": "/laguro/precache-manifest.d426d0c66463cc39ade80d8dfe9e6dab.js",
   "service-worker.js": "/laguro/service-worker.js"
 }
