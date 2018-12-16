@@ -19,13 +19,12 @@ class App extends Component {
     return (
       <Layout isLoggedIn={this.props.isLoggedIn}>
         <Wrapper>
-          {this.props.isLoggedIn && (
+          {this.props.isLoggedIn ? (
             <>
               <h1>Hello{!!this.props.user ? `, ${this.props.user}` : "!"}!</h1>
               <CornerstoneElement imageId={imageId} />
             </>
-          )}
-          {!this.props.isLoggedIn && (
+          ) : (
             <h1>
               <a href="/">Please Log In.</a>
             </h1>
