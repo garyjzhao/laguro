@@ -14,13 +14,11 @@ const Wrapper = styled.div`
   }
 `;
 
-const firstImage =
-  "https://raw.githubusercontent.com/garyjzhao/laguro/master/public/images/IO000000.jpg";
-
-const secondImage =
-  "https://raw.githubusercontent.com/garyjzhao/laguro/master/public/images/IO000001.jpg";
-const thirdImage =
-  "https://raw.githubusercontent.com/garyjzhao/laguro/master/public/images/IO000002.jpg";
+const images = [
+  "https://raw.githubusercontent.com/garyjzhao/laguro/master/public/images/IO000000.jpg",
+  "https://raw.githubusercontent.com/garyjzhao/laguro/master/public/images/IO000001.jpg",
+  "https://raw.githubusercontent.com/garyjzhao/laguro/master/public/images/IO000002.jpg"
+];
 
 class App extends Component {
   render() {
@@ -33,9 +31,9 @@ class App extends Component {
               <p>
                 Scroll to Zoom. Click and Drag to Increase/Decrease Contrast
               </p>
-              <CornerstoneElement imageId={firstImage} />
-              <CornerstoneElement imageId={secondImage} />
-              <CornerstoneElement imageId={thirdImage} />
+              {images.map(data => (
+                <CornerstoneElement imageId={data} />
+              ))}
             </>
           ) : (
             <h1>
