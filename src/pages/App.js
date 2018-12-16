@@ -15,18 +15,21 @@ const imageId =
   "https://raw.githubusercontent.com/garyjzhao/laguro/master/shot1-2.jpg";
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      user: this.props.user
-    };
-  }
   render() {
     return (
       <Layout>
         <Wrapper>
-          <h1>Hello{!!this.state.user ? `, ${this.state.user}` : "!"}!</h1>
-          <CornerstoneElement imageId={imageId} />
+          {this.props.isLoggedIn && (
+            <>
+              <h1>Hello{!!this.props.user ? `, ${this.props.user}` : "!"}!</h1>
+              <CornerstoneElement imageId={imageId} />
+            </>
+          )}
+          {!this.props.isLoggedIn && (
+            <h1>
+              <a href="/">Please Log In.</a>
+            </h1>
+          )}
         </Wrapper>
       </Layout>
     );

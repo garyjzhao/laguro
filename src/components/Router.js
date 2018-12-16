@@ -8,12 +8,16 @@ class Router extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      user: ""
+      user: "",
+      isLoggedIn: false
     };
   }
 
   getUsername = username => {
-    this.setState({ user: username });
+    this.setState({
+      user: username,
+      isLoggedIn: true
+    });
   };
 
   render() {
@@ -27,11 +31,17 @@ class Router extends Component {
               <Login
                 user={this.state.user}
                 getUsername={this.getUsername}
+                isLoggedIn={this.state.isLoggedIn}
                 {...props}
               />
             )}
           />
-          <Route path="/App" render={() => <App user={this.state.user} />} />
+          <Route
+            path="/App"
+            render={() => (
+              <App user={this.state.user} isLoggedIn={this.state.isLoggedIn} />
+            )}
+          />
           <Route component={NotFound} />
         </Switch>
       </BrowserRouter>
