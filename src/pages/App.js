@@ -9,8 +9,8 @@ const Wrapper = styled.div`
   margin: 0 auto;
   padding: 0 16px;
   box-sizing: border-box;
+  text-align: center;
   h1 {
-    text-align: center;
   }
 `;
 
@@ -25,6 +25,9 @@ class App extends Component {
           {this.props.isLoggedIn ? (
             <>
               <h1>Hello{!!this.props.user ? `, ${this.props.user}` : "!"}!</h1>
+              <p>
+                Scroll to Zoom. Click and Drag to Increase/Decrease Contrast
+              </p>
               <CornerstoneElement imageId={imageId} />
             </>
           ) : (

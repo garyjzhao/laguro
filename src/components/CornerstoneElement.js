@@ -14,6 +14,10 @@ const CornerstoneWrapper = styled.div`
   width: 500px;
   height: 500px;
   margin: 0 auto;
+  .viewportElement {
+    width: 100%;
+    height: 100%;
+  }
 `;
 
 class CornerStoneElement extends Component {
@@ -47,10 +51,6 @@ class CornerStoneElement extends Component {
           className="viewportElement"
           ref={input => {
             this.element = input;
-          }}
-          style={{
-            width: "500px",
-            height: "500px"
           }}
         />
       </CornerstoneWrapper>

@@ -32,21 +32,17 @@ class Router extends Component {
             exact
             path="/"
             render={props => (
-              <Login
-                user={this.state.user}
-                getUsername={this.getUsername}
-                isLoggedIn={this.state.isLoggedIn}
-                {...props}
-              />
+              <Login getUsername={this.getUsername} {...props} />
             )}
           />
           <Route
             path="/App"
-            render={() => (
+            render={props => (
               <App
                 user={this.state.user}
                 isLoggedIn={this.state.isLoggedIn}
                 logout={this.state.logout}
+                {...props}
               />
             )}
           />
